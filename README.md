@@ -26,8 +26,6 @@ Hospitals often rely on Excel files for managing patient records, appointments, 
 
 This project demonstrates the complete transition from an Excel-based system to a structured relational database using SQL Server. It includes schema design, data migration, integrity enforcement using triggers and constraints, secure access control using stored procedures with credential validation, and automated financial reporting.
 
-The project simulates a real-world database implementation scenario and demonstrates production-level SQL development skills required for Data Analyst and Database roles.
-
 
 ___
 <h2><a class="anchor" id="problem-statement"></a>Problem Statement</h2>
