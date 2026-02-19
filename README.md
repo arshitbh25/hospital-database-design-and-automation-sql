@@ -94,21 +94,21 @@ ___
 ```
 hospital-database-design-and-automation-sql/
 │
-├── README.md
-│
+├── data/
+|   ├── doctor_credentials.csv
+│   └── hospital_data.csv
+|
+├── docs/
+|   └── hospital_er_diagram.png
+|
 ├── sql/
 │   ├── 01_database_schema_creation.sql
 │   ├── 02_data_insertion_and_initialization.sql
 │   ├── 03_appointment_scheduling_constraints.sql
 │   ├── 04_role_based_access_control.sql
 │   └── 05_monthly_department_revenue_report.sql
-│
-├── data/
-|   ├── doctor_credentials.csv
-│   └── hospital_data.csv
-│
-└── docs/
-    └── hospital_er_diagram.png
+|
+└── README.md
 ```
 
 ___
