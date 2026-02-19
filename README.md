@@ -44,6 +44,35 @@ The objective was to design and implement a robust relational database system to
 
 
 ___
+<h2><a class="anchor" id="dataset"></a>Dataset</h2>
+
+**Primary Dataset (hospital_data)**
+```bash
+data/hospital_data.csv
+```
+
+The primary dataset contains combined hospital operational data exported from the legacy Excel system. It includes information related to:
+- Patient details
+- Doctor information
+- Department records
+- Appointment schedules
+- Prescription records
+- Billing and revenue data
+- Lab Reports data
+
+This dataset was imported into SQL Server and transformed into multiple normalized relational tables to ensure data integrity and efficient querying.
+
+
+**Authentication Dataset (doctor_credentials)**
+```bash
+data/doctor_credentials.csv
+```
+
+This table stores login credentials for doctors and is used for authentication and secure access control through a stored procedure.
+It ensures that only authorized doctors can access patient-related information after successful credential verification.
+
+
+___
 <h2><a class="anchor" id="tools--technologies"></a>Tools and Technologies</h2>
 
 🐍 Python
