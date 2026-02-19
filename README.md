@@ -212,15 +212,14 @@ ___
 ___
 <h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 
-Step 1: Clone Repository
+Step 1: Open SQL Server Management Studio
 
+Step 2: Import Dataset into staging table:
 ```bash
-git clone https://github.com/yourusername/hospital-database-design-and-automation-sql.git
+data/hospital_data
 ```
 
-Step 2: Open SQL Server Management Studio
-
-Step 3: Run SQL files in order:
+Step 3: Execute SQL files in order:
 
 ```bash
 01_database_schema_creation.sql
