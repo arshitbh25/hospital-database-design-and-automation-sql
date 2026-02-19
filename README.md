@@ -7,6 +7,7 @@ ___
 ## 📌 Table of Contents
 - <a href="#overview">Overview</a>
 - <a href="#problem-statement">Problem Statement</a>
+- <a href="#dataset">Dataset</a>
 - <a href="#tools--technologies">Tools and Technologies</a>
 - <a href="#project-structure">Project Structure</a>
 - <a href="#methods">Methods</a>
@@ -46,7 +47,7 @@ The objective was to design and implement a robust relational database system to
 ___
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-**Primary Dataset (hospital_data)**
+<h4>**Primary Dataset (hospital_data)**</h4>
 ```bash
 data/hospital_data.csv
 ```
@@ -63,7 +64,7 @@ The primary dataset contains combined hospital operational data exported from th
 This dataset was imported into SQL Server and transformed into multiple normalized relational tables to ensure data integrity and efficient querying.
 
 
-**Authentication Dataset (doctor_credentials)**
+<h4>**Authentication Dataset (doctor_credentials)**</h4>
 ```bash
 data/doctor_credentials.csv
 ```
@@ -75,68 +76,54 @@ It ensures that only authorized doctors can access patient-related information a
 ___
 <h2><a class="anchor" id="tools--technologies"></a>Tools and Technologies</h2>
 
-🐍 Python
-
-🧪 Pandas
-
-📊 Plotly
-
-🧠 SpaCy
-
-⚡ Streamlit
-
-🔤 NLTK
-
-🤗 Hugging Face
-
+- SQL Server
+- SQL Server Management Studio
+- Transact-SQL (T-SQL)
+- Stored Procedures
+- Triggers
+- Relational Database Design
+- CSV Data Migration
+- ER Diagram Design
+- RDBMS Normalization Rules
 
 ___
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
 ```
-Text-Analysis-Platform-using-Python-GenAI/
-│
-├── Scripts/
-│      ├── app.py
-│      ├── nlp_functions.py
-│      └── text_cleaner.py
-│
-├── .gitattributes
-│
-├── .gitignore
+hospital-database-design-and-automation-sql/
 │
 ├── README.md
 │
-└── Text Analysis Platform Report.pdf
+├── sql/
+│   ├── 01_database_schema_creation.sql
+│   ├── 02_data_insertion_and_initialization.sql
+│   ├── 03_appointment_scheduling_constraints.sql
+│   ├── 04_role_based_access_control.sql
+│   └── 05_monthly_department_revenue_report.sql
+│
+├── data/
+|   ├── doctor_credentials.csv
+│   └── hospital_data.csv
+│
+└── docs/
+    └── hospital_er_diagram.png
 ```
 
 ___
 <h2><a class="anchor" id="methods"></a>Methods</h2>
 
-**Data Input & Preprocessing**
-- Users can upload raw text directly or upload a CSV file.
-- When a CSV file is uploaded, the platform provides an option to select a specific column/row for analysis.
-- The selected text is cleaned using techniques such as lowercasing, punctuation removal, and tokenization.
-- Preprocessing is implemented using SpaCy and regular expressions (re) to ensure clean and consistent text.
+**1. Database Schema Design**
 
-**Linguistic Processing**
-- After preprocessing, the text undergoes deeper linguistic analysis through SpaCy’s NLP pipeline, which performs: _Part-of-Speech (POS) tagging, Named Entity Recognition (NER), Lemmatization, Dependency parsing_
-- This step structures the text into meaningful components to support further analysis and insight extraction.
+Created a fully normalized relational schema with proper:
+- Primary Keys
+- Foreign Keys
+- Constraints
+- Entity relationships
 
-**Sentiment & Emotion Analysis**
-- The platform uses pre-trained transformer models from Hugging Face to identify: _Overall sentiment (positive, negative, neutral), Specific emotions such as joy, anger, fear, or sadness_
-- These models help uncover deeper emotional patterns beyond basic text statistics.
-
-**Statistical & Exploratory Text Analysis**
-- Using Pandas and Python-based logic, the platform extracts insights such as: _Word and sentence frequency, Common phrases (n-grams), Keyword density, Readability metrics_
-- This reveals key themes, repeating patterns, and dominant language structure.
-
-**Interactive Visualization**
-- Insights are displayed through dynamic visualizations built with Plotly, including: _Word frequency charts, Sentiment distribution plots, Entity highlights, Emotion breakdown graphs_
-- These interactive charts help users instantly interpret findings.
-
-**User Interface & Interaction**
-- The full pipeline is integrated into an intuitive Streamlit interface that enables: _Real-time processing, Smooth navigation between features, Instant updates to visual insights, A simple, no-code experience suitable for all users_
+**File :**
+```bash
+sql/01_database_schema_creation.sql
+```
 
 ___
 <h2><a class="anchor" id="key-insights"></a>Key Insights</h2>
