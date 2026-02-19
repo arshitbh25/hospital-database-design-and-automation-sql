@@ -47,7 +47,7 @@ The objective was to design and implement a robust relational database system to
 ___
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-<h4>**Primary Dataset (hospital_data)**</h4>
+**Primary Dataset (hospital_data)**
 ```bash
 data/hospital_data.csv
 ```
@@ -64,7 +64,7 @@ The primary dataset contains combined hospital operational data exported from th
 This dataset was imported into SQL Server and transformed into multiple normalized relational tables to ensure data integrity and efficient querying.
 
 
-<h4>**Authentication Dataset (doctor_credentials)**</h4>
+**Authentication Dataset (doctor_credentials)**
 ```bash
 data/doctor_credentials.csv
 ```
