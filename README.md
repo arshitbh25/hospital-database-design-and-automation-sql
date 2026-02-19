@@ -217,6 +217,7 @@ Step 1: Open SQL Server Management Studio
 Step 2: Import Dataset into staging table:
 ```bash
 data/hospital_data
+data/doctor_credentials
 ```
 
 Step 3: Execute SQL files in order:
