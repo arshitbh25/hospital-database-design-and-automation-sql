@@ -11,7 +11,7 @@ ___
 - <a href="#tools--technologies">Tools and Technologies</a>
 - <a href="#project-structure">Project Structure</a>
 - <a href="#methods">Methods</a>
-- <a href="#overflow-diagram">Overflow Diagram</a>
+- <a href="#er-diagram">ER Diagram</a>
 - <a href="#key-insights">Key Insights</a>
 - <a href="#how-to-run-this-project">How to Run This Project</a>
 - <a href="#result--conclusion">Result and Conclusion</a>
@@ -191,21 +191,9 @@ sql/05_monthly_department_revenue_report.sql
 
 
 ___
-<h2><a class="anchor" id="overflow-diagram"></a>Overflow Diagram</h2>
-```
-Department
-    │
-    └── Doctor
-           │
-           ├── Doctor_Credentials
-           │
-Patient ───┼── Appointment
-               ├── Prescription
-               ├── Bill
-               └── LabReport
-```
+<h2><a class="anchor" id="er-diagram"></a>ER Diagram</h2>
 
-**ER Diagram for Final Database Schema :**
+**Location :**
 ```bash
 docs/hospital_er_diagram.png
 ```
@@ -254,8 +242,6 @@ The project successfully transformed an unstructured Excel-based hospital data s
 - Secure credential-based access control
 - Automated department-wise revenue reporting
 - Improved scalability and data reliability
-
-This implementation reflects real-world database architecture and demonstrates production-level SQL and data management skills.
 
 
 ___
