@@ -108,6 +108,8 @@ hospital-database-design-and-automation-sql/
 │   ├── 04_role_based_access_control.sql
 │   └── 05_monthly_department_revenue_report.sql
 |
+├── .gitattributes
+|
 └── README.md
 ```
 
