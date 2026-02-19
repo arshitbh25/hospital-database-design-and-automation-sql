@@ -11,8 +11,10 @@ ___
 - <a href="#tools--technologies">Tools and Technologies</a>
 - <a href="#project-structure">Project Structure</a>
 - <a href="#methods">Methods</a>
+- <a href="#overflow-diagram">Overflow Diagram</a>
 - <a href="#key-insights">Key Insights</a>
 - <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#result--conclusion">Result and Conclusion</a>
 - <a href="#future-work">Future Work</a>
 - <a href="#author--contact">Author and Contact</a>
 
@@ -189,6 +191,27 @@ sql/05_monthly_department_revenue_report.sql
 
 
 ___
+<h2><a class="anchor" id="overflow-diagram"></a>Overflow Diagram</h2>
+```
+Department
+    │
+    └── Doctor
+           │
+           ├── Doctor_Credentials
+           │
+Patient ───┼── Appointment
+               ├── Prescription
+               ├── Bill
+               └── LabReport
+```
+
+**ER Diagram for Final Database Schema :**
+```bash
+docs/hospital_er_diagram.png
+```
+
+
+___
 <h2><a class="anchor" id="key-insights"></a>Key Insights</h2>
 
 - Excel is not suitable for managing relational operational data at scale
@@ -220,6 +243,19 @@ Step 3: Run SQL files in order:
 ```
 
 Step 4: Execute Stored Procedures
+
+
+___
+<h2><a class="anchor" id="result--conclusion"></a>Result and Conclusion</h2>
+
+The project successfully transformed an unstructured Excel-based hospital data system into a structured relational database with:
+- Enforced referential integrity
+- Automated scheduling validation using trigger
+- Secure credential-based access control
+- Automated department-wise revenue reporting
+- Improved scalability and data reliability
+
+This implementation reflects real-world database architecture and demonstrates production-level SQL and data management skills.
 
 
 ___
