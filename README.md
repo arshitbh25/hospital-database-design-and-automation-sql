@@ -198,6 +198,8 @@ ___
 docs/hospital_er_diagram.png
 ```
 
+![ER Diagram](https://github.com/arshitbh25/hospital-database-design-and-automation-sql/blob/main/docs/hospital_er_diagram.png)
+
 
 ___
 <h2><a class="anchor" id="key-insights"></a>Key Insights</h2>
